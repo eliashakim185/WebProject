@@ -1,0 +1,47 @@
+ 
+F12   number: 2  for sale =130  all price =260
+F12   number: 3  for sale =130  all price =390
+ 
+ 
+F12   number: 4  for sale =130  all price =520
+F12   number: 3  for sale =130  all price =390
+ 
+F12   number: 4  for sale =130  all price =520
+F12   number: 3  for sale =130  all price =390
+ 
+F12   number: 2  for sale =130  all price =260
+ 
+F12   number: 2  for sale =130  all price =260
+ 
+F12   number: 2  for sale =130  all price =260
+ 
+F12   number: 2  for sale =130  all price =260
+ 
+ 
+F12   number: 1  for sale =130  all price =130
+ 
+Overall Total: 3640
+ 
+F12   number: 6  for sale =130  all price =780
+Overall Total: 780
+ 
+ 
+F12   number: 4  for sale =130  all price =520
+F12   number: 9  for sale =130  all price =1170
+F12   number: 1  for sale =130  all price =130
+Overall Total: 1820
+ 
+ 
+F12   number: 3  for sale =130  all price =390
+ 
+ 
+F12   number: 1  for sale =130  all price =130
+Overall Total: 130
+ 
+F12   number: 7  for sale =130  all price =910
+F12   number: 7  for sale =130  all price =910
+F12   number: 7  for sale =130  all price =910
+F12   number: 7  for sale =130  all price =910
+F12   number: 3  for sale =130  all price =390
+Overall Total: 4030
+ 

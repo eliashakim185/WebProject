@@ -1,0 +1,35 @@
+class BTreeNode:
+    def __init__(self, leaf=False):
+        self.leaf = leaf
+        self.keys = []
+        self.c = []
+
+
+class Btree:
+    def __init__(self, t):
+        self.root = BTreeNode(leaf=True)
+        self.t = t
+
+    def bsearch(self, x, k):
+        i = 0
+        while i < len(x.keys) and k > x.keys[i]:
+            i = i + 1
+        if i < len(x.keys) and k == x.keys[i]:
+            return x, i
+        elif x.leaf:
+            return None
+        else:
+            return self.bsearch(x.c[i], k)
+
+    def bsearch_global(self, k):
+        return self.bsearch(self.root, k)
+
+
+left_node = BTreeNode(leaf=True)
+left_node.keys = [1, 2]
+right_node = BTreeNode(leaf=True)
+left_node.keys = [4, 5]
+b_tree = Btree(2)
+b_tree.root.leaf = False
+b_tree.root.keys = [3]
+b_tree.root.c = [left_node, right_node]

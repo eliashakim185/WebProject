@@ -1,0 +1,15 @@
+*{
+	padding=0;
+	margin=0;
+	text-decoration=none;
+}
+
+.main{
+	text-align=center;
+	padding=10px;
+	margin=10px;
+}
+	.main input,select{
+		padding=8px;
+		margin=8px;
+	}

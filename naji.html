@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Subscription and Payment</title>
+        <style>
+            body {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 2em;
+            }
+            #mySubmit {
+                font-size: 1em;
+            }
+            .mysubmit {
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="checkbox" id="myCheckbox">
+        <label for="myCheckbox">Subscribe</label><br>
+
+        <input type="radio" id="visaBtn" name="payment">
+        <label for="visaBtn">Visa</label><br>
+
+        <input type="radio" id="mastercardBtn" name="payment">
+        <label for="mastercardBtn">MasterCard</label><br>
+
+        <input type="radio" id="paypalBtn" name="payment">
+        <label for="paypalBtn">PayPal</label><br>
+
+        <button type="button" id="mySubmit">Submit</button><br>
+
+        <p id="subResult"></p>
+        <p id="paymentResult"></p>
+
+        <script>
+            const myCheckbox = document.getElementById("myCheckbox");
+            const visaBtn = document.getElementById("visaBtn");
+            const mastercardBtn = document.getElementById("mastercardBtn");
+            const paypalBtn = document.getElementById("paypalBtn");
+            const mySubmit = document.getElementById("mySubmit");
+            const subResult = document.getElementById("subResult");
+            const paymentResult = document.getElementById("paymentResult");
+
+            mySubmit.onclick = function() {
+                
+                if (myCheckbox.checked) {
+                    subResult.textContent = 'You are subscribed.';
+                } else {
+                    subResult.textContent = 'You are not subscribed.';
+                }
+
+                
+                if (visaBtn.checked) {
+                    paymentResult.textContent = 'You are paying with Visa.';
+                } else if (mastercardBtn.checked) {
+                    paymentResult.textContent = 'You are paying with MasterCard.';
+                } else if (paypalBtn.checked) {
+                    paymentResult.textContent = 'You are paying with PayPal.';
+                } else {
+                    paymentResult.textContent = 'You must select a payment method.';
+                }
+            };
+        </script>
+    </body>
+</html>
